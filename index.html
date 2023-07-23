@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin-Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <div id="main_container">
+        <!-- navbar start -->
+        <div id="main_navi">
+            <div id="navigation" class="p-0">
+                <section class="logo">
+                    <div class=" col-6">
+                        <img width="90" height="80" src="img/logo.webp" alt="" id="logo">
+                    </div>
+                    <div class="input-group mb-3 col-6 mobile_input">
+                        <span class="input-group-text " id="basic-addon1"><i
+                                class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control" placeholder="Username"
+                            aria-label="Username" aria-describedby="basic-addon1">
+                        <i class="fa-solid fa-magnifying-glass mobile_search"></i>
+                    </div>
+                </section>
+                <section class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-house-chimney"></i>
+                                <span class="mobile_nav">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-user-group"></i>
+                                <span class="mobile_nav">My Network</span>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span class="mobile_nav">Jobs</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-regular fa-comment-dots"></i>
+                                <span class="mobile_nav">Messaging</span>
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-bell"></i>
+                                <span class="mobile_nav">Notification</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="pe-3">
+                                <img src="img/testimonial.jpg" alt="profile" class="profile">
+                                <span class="mobile_nav">Me</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- <hr style="border: 1px solid #242323; height: 60px;"> -->
+
+                <section class="right_menu">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-6 p-0 border_left">
+                                <nav class="navbar  ">
+                                    <a class="navbar-brand" href="#"></a>
+                                    <button style="box-shadow: inset 0 0 0 #ddd; border: none; "
+                                        class="navbar-toggler business" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                                        aria-label="Toggle navigation">
+                                        <!-- <span class="navbar-toggler-icon"></span> -->
+                                        <i class="fa-solid fa-grip"></i>
+                                        <p class="" style="font-size: 13px;">for business</p>
+                                    </button>
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                                        aria-labelledby="offcanvasNavbarLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">For business</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div class="container card">
+                                                <div class="row py-2" style="border-bottom: 1px solid #d4caca;">
+                                                    <h5>Visit More linkedin products</h5>
+                                                </div>
+
+                                                <div class="row left_bar pt-4">
+                                                    <div class="col-md-3 col-sm-3 col-3 text-center">
+                                                        <h6><a href="#"><i class="fa-solid fa-play"></i></a></h6>
+                                                        <h6>Learning</h6>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-3 col-3 text-center">
+                                                        <h6><a href="#"><i class="fa-solid fa-play"></i></a></h6>
+                                                        <h6>Talent</h6>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-3 col-3 text-center">
+                                                        <h6><a href="#"><i class="fa-solid fa-play"></i></a></h6>
+                                                        <h6>Post A Job</h6>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-3 col-3 text-center">
+                                                        <h6><a href="#"><i class="fa-solid fa-play"></i></a></h6>
+                                                        <h6>Adverting</h6>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="row left_bar pt-3">
+                                                    <div class="col-md-3 col-sm-3 col-3 text-center">
+                                                        <h6><a href="#"><i class="fa-solid fa-play"></i></a></h6>
+                                                        <h6>Talent</h6>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-3 col-3 text-center">
+                                                        <h6><a href="#"><i class="fa-solid fa-play"></i></a></h6>
+                                                        <h6>Post A Job</h6>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-3 col-3 text-center">
+                                                        <h6><a href="#"><i class="fa-solid fa-play"></i></a></h6>
+                                                        <h6>Adverting</h6>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <!-- linked products 2 -->
+                                            <div class="container card mt-4">
+                                                <div class="row py-2" style="border-bottom: 1px solid #d4caca;">
+                                                    <h5> linkedin business for service</h5>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-12 col-sm-12 col-12 sidebar_item_2">
+                                                        <h5><a href="#">Talent Solutions</a></h5>
+                                                        <h6><a href="#">Talent Solutions</a></h6>
+                                                    </div>
+                                                    <div class="col-md-12 col-sm-12 col-12 sidebar_item_2">
+                                                        <h5><a href="#">Talent Solutions</a></h5>
+                                                        <h6><a href="#">Talent Solutions</a></h6>
+                                                       
+                                                    </div>
+                                                    <div class="col-md-12 col-sm-12 col-12 sidebar_item_2">
+                                                        <h5><a href="#">Talent Solutions</a></h5>
+                                                        <h6><a href="#">Talent Solutions</a></h6>
+                                                    </div>
+                                                    <div class="col-md-12 col-sm-12 col-12 sidebar_item_2">
+                                                        <h5><a href="#">Talent Solutions</a></h5>
+                                                        <h6><a href="#">Talent Solutions</a></h6>
+                                                    </div>
+                                                    <div class="col-md-12 col-sm-12 col-12 sidebar_item_2">
+                                                        <h5><a href="#">Talent Solutions</a></h5>
+                                                        <h6><a href="#">Talent Solutions</a></h6>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-6 business">
+
+                                <p class="pt-2">
+                                    <a class="get" href="#"> get hired faster.try primium free. </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+        <!-- banner section-->
+
+
+        <div id="banner">
+            <div class="left_box">
+                <!-- item-1 -->
+                <div class="container card">
+                    <div class="row">
+                        <div class="col-md-12 p-0">
+                            <img src="https://media.licdn.com/dms/image/D4D16AQG86tuq_IYzuA/profile-displaybackgroundimage-shrink_350_1400/0/1675418140627?e=1695254400&v=beta&t=yRmLmpMmg688jKqmQBxtlR2OISz30ecmUARIwFgDJNw"
+                                alt="banner" class="left_banner">
+                        </div>
+                    </div>
+
+                    <div class="row Mern_stack">
+                        <div class="col-md-12 text-center">
+                            <img src="img/testimonial.jpg" alt="" class="profile_5">
+                            <h5><a href="#">Mr. Mns</a></h5>
+                            <h6>Mern stack || .Net Full Stack Developer</h6>
+                        </div>
+                        <hr class="Mern_stack_hr">
+                    </div>
+                    <!-- view profile -->
+                    <div class="row view mobile_view">
+                        <div class="col-md-9 mt-2">
+                            <p><a href="#">Who's viewed your profile</a></p>
+                        </div>
+                        <div class="col-md-3 text_left mt-2">
+                            <p><a href="#">34</a></p>
+                        </div>
+                    </div>
+                    <div class="row view view_2 mobile_view">
+                        <div class="col-md-9 mt-2">
+                            <p><a href="#">Inspressions of your post</a></p>
+                        </div>
+                        <div class="col-md-3 text_left mt-2">
+                            <p><a href="#">300</a></p>
+                        </div>
+                        <!-- <hr> -->
+                    </div>
+
+                    <div class="row access">
+                        <div class="col-md-12">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <h6> <i class="fa-solid fa-square"></i> <a href="#">Lorem ipsum dolor sit amet consectetur.
+                                </a> </h6>
+                        </div>
+                    </div>
+
+                    <div class="row bookmark">
+                        <h6> <a href="#"><i class="fa-solid fa-bookmark"></i> My Items </a> </h6>
+                    </div>
+                </div>
+
+                <!-- items-2 -->
+                <div class="container card mt-2 mobile_view">
+                    <div class="row item_2">
+                        <h6 class="pt-2">Recents</h6>
+                        <div class="col-md-12 ">
+                            <p><a href="#"> <i class="fa-solid fa-people-group"></i> Software Dweveloper </a></p>
+                            <p><a href="#"> <i class="fa-solid fa-people-group"></i> Remote Jobs </a></p>
+                            <p><a href="#"> # Fresher </a></p>
+                            <p><a href="#"><i class="fa-solid fa-people-group"></i> Full Stack Developer </a></p>
+                        </div>
+                    </div>
+                    <!-- code for groups -->
+                    <div class="row">
+                        <h6 class="pt-2"><a href="#">Groups</a></h6>
+                        <div class="col-md-12 item_2">
+                            <p><a href="#"> <i class="fa-solid fa-people-group"></i> Software Dweveloper </a></p>
+                            <p><a href="#"> <i class="fa-solid fa-people-group"></i> Remote Jobs </a></p>
+                            <p><a href="#"><i class="fa-solid fa-people-group"></i> Full Stack Developer </a></p>
+                        </div>
+                    </div>
+
+                    <div class="row item_2">
+                        <h6 class="pt-2"><a href="#">Events</a></h6>
+                        <div class="col-md-12 ">
+                            <p><a href="#"> # Software Dweveloper </a></p>
+                            <p><a href="#"> # Freelancer </a></p>
+                            <p><a href="#"># Job Opputunity </a></p>
+                        </div>
+                        <div class="col-md-12 mb-2">
+                            <div class="accordion" id="accordionExample1">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne1" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Show More
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne1" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample1">
+                                        <div class="accordion-body">
+                                            <p><a href="#"> # Software Dweveloper </a></p>
+                                            <p><a href="#"> # Freelancer </a></p>
+                                            <p><a href="#"># Job Opputunity </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="center_box">
+                <div class="container p-0 card input_icon">
+                    <div class="row">
+                        <div class="col-md-1">
+                            <img src="img/testimonial.jpg" alt="profile" class="profile_2">
+                        </div>
+                        <div class="col-md-11">
+                            <input type="text" class="form-control" placeholder="Start a post">
+                        </div>
+                    </div>
+                    <div class="row pt-3 Photo_mobile">
+                        <div class="col-md-3 col-sm-3 col-3">
+                            <h6> <i class="fa-regular fa-image"></i> Photo </h6>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-3">
+                            <h6> <i class="fa-brands fa-youtube"></i></i> Video </h6>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-3">
+                            <h6> <i class="fa-solid fa-calendar-days"></i> Event </h6>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-3">
+                            <h6> <i class="fa-regular fa-newspaper"></i> Write article </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- filter -->
+                <div class="conatainer">
+                    <div class="row pt-1">
+                        <div class="col-md-9  col-sm-9 col-8">
+                            <hr class="hr">
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-4 text-end">
+                            <p class="short">Short by: <span class="top">Top</span> <i
+                                    class="fa-solid fa-caret-down"></i></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- post section -->
+                <div class="container card">
+                    <div class="row post" id="">
+                        <div class="col-md-8 col-sm-8 col-8 post_user">
+                            <div>
+                                <img src="img/testimonial.jpg" alt="profile" class="profile_3">
+                            </div>
+                            <div>
+                                <h6> Mr.Rahim <span>like this</span> </h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-4 text-end">
+                            <i class="fa-solid fa-ellipsis"></i> <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <hr class="hr_2">
+
+                    <div class="row post_2" id="">
+                        <div class="col-md-8 col-sm-8 col-8 post_user">
+                            <div>
+                                <img src="img/testimonial.jpg" alt="profile" class="profile_4">
+                            </div>
+                            <div>
+                                <h5>Mr.Rahim </h5>
+                                <p>Mern Stack Developer || Dot Net Developer... 6h <i
+                                        class="fa-solid fa-earth-oceania"></i></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-4 text-end">
+                            <p style="color: rgb(73, 73, 255);"><i class="fa-solid fa-plus"></i> Follow</p>
+                        </div>
+                    </div>
+
+                    <div class="row image_post">
+                        <div class="col-md-12 col-sm-12 col-12">
+                            <p class="para_1">Salute of our all farmer family who's work hard for us a lot of repect.
+                                Without farmers, we can't consume any food. The farmer raises crops, livestock, and
+                                passionately does everything for society.</p>
+                            <a href="#">
+                                #NeverGiveUp #EmbraceChallenges #AchieveSuccess #BelieveInYourself <br>#Motivation
+                            </a>
+
+                            <img src="img/farmer1.jpg" alt="post" class="farmer">
+                            <div class="row mt-2 farmer_text">
+                                <div class="col-md-6 col-sm-6 col-6">
+                                    <p><i class="fa-regular fa-thumbs-up"></i> <i class="fa-regular fa-heart"></i> <i
+                                            class="fa-regular fa-lightbulb"></i> abcdx </p>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-6 text-end">
+                                    <p>103 Comments <span>.</span> 23 Posts</p>
+                                </div>
+                                <hr class="hr_2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row like">
+                        <div class="col-md-3 col-sm-3 col-3">
+                            <h6><i class="fa-regular fa-thumbs-up"></i> Like</h6>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-3">
+                            <h6><i class="fa-regular fa-comment"></i> Comments</h6>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-3">
+                            <h6><i class="fa-solid fa-repeat"></i> Repost</h6>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-3">
+                            <h6><i class="fa-solid fa-share"></i> Share</h6>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- post-2 -->
+                <div class="container card mt-2">
+                    <div class="row post" id="">
+                        <div class="col-md-8 col-sm-8 col-8 post_user">
+                            <div>
+                                <img src="img/testimonial.jpg" alt="profile" class="profile_3">
+                            </div>
+                            <div>
+                                <h6> Mr.Rahim <span>like this</span> </h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-4 text-end">
+                            <i class="fa-solid fa-ellipsis"></i> <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <hr class="hr_2">
+
+                    <div class="row post_2" id="">
+                        <div class="col-md-8 col-sm-8 col-8 post_user">
+                            <div>
+                                <img src="img/testimonial.jpg" alt="profile" class="profile_4">
+                            </div>
+                            <div>
+                                <h5>Mr.Rahim </h5>
+                                <p>Mern Stack Developer || Dot Net Developer... 6h <i
+                                        class="fa-solid fa-earth-oceania"></i></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-4 text-end">
+                            <p style="color: rgb(73, 73, 255);"><i class="fa-solid fa-plus"></i> Follow</p>
+                        </div>
+                    </div>
+
+                    <div class="row image_post">
+                        <div class="col-md-12 col-sm-12 col-12">
+                            <p class="para_1">Salute of our all farmer family who's work hard for us a lot of repect.
+                                Without farmers, we can't consume any food. The farmer raises crops, livestock, and
+                                passionately does everything for society.</p>
+                            <a href="#">
+                                #NeverGiveUp #EmbraceChallenges #AchieveSuccess #BelieveInYourself <br>#Motivation
+                            </a>
+
+                            <img src="img/farmer3.jpg" alt="post" class="farmer">
+                            <div class="row mt-2 farmer_text">
+                                <div class="col-md-6 col-sm-6 col-6">
+                                    <p><i class="fa-regular fa-thumbs-up"></i> <i class="fa-regular fa-heart"></i> <i
+                                            class="fa-regular fa-lightbulb"></i> abcdx </p>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-6 text-end">
+                                    <p>103 Comments <span>.</span> 23 Posts</p>
+                                </div>
+                                <hr class="hr_2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row like">
+                        <div class="col-md-3 col-sm-3 col-3">
+                            <h6><i class="fa-regular fa-thumbs-up"></i> Like</h6>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-3">
+                            <h6><i class="fa-regular fa-comment"></i> Comments</h6>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-3">
+                            <h6><i class="fa-solid fa-repeat"></i> Repost</h6>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-3">
+                            <h6><i class="fa-solid fa-share"></i> Share</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="right_box">
+                <div class="container card">
+                    <div class="row news">
+                        <h6 class="pt-2"><a href="#">LinkedIn News</a></h6>
+                        <div class="col-md-12">
+                            <ul>
+                                <li><a href="#"> IT mojors record profits rise <br><span>
+                                            1 days ago. 1111 readers
+                                        </span> </a></li>
+                                <li><a href="#"> IT mojors record profits rise <br><span>
+                                            1 days ago. 1111 readers
+                                        </span> </a></li>
+                                <li><a href="#"> IT mojors record profits rise <br><span>
+                                            1 days ago. 1111 readers
+                                        </span> </a></li>
+                                <li><a href="#"> IT mojors record profits rise <br><span>
+                                            1 days ago. 1111 readers
+                                        </span> </a></li>
+                                <li><a href="#"> IT mojors record profits rise <br><span>
+                                            1 days ago. 1111 readers
+                                        </span> </a></li>
+                                <li><a href="#"> IT mojors record profits rise <br><span>
+                                            1 days ago. 1111 readers
+                                        </span> </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 mb-2">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Show More
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li><a href="#"> IT mojors record profits rise <br><span>
+                                                            1 days ago. 1111 readers
+                                                        </span> </a></li>
+                                                <li><a href="#"> IT mojors record profits rise <br><span>
+                                                            1 days ago. 1111 readers
+                                                        </span> </a></li>
+                                                <li><a href="#"> IT mojors record profits rise <br><span>
+                                                            1 days ago. 1111 readers
+                                                        </span> </a></li>
+                                                <li><a href="#"> IT mojors record profits rise <br><span>
+                                                            1 days ago. 1111 readers
+                                                        </span> </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-2 card premium">
+                    <div class="row premium_2 pt-1">
+                        <div class="col-md-10 text-end">
+                            <h6 class="me-2">Ad</h6>
+                        </div>
+                        <div class="col-md-2 text-start">
+                            <h6><i class="fa-solid fa-ellipsis"></i></h6>
+                        </div>
+
+                        <div class="col-md-12 p-0 text-center"
+                            style="font-size: 13px; color:#242323; font-weight: 200;  ">
+                            <p class="pe-3 ps-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <section id="linkedin">
+                        <div>
+                            <img src="img/testimonial.jpg" alt="profile" class="profile_5">
+                        </div>
+                        <div>
+                            <img src="https://www.citypng.com/public/uploads/preview/hd-square-golden-gold-linkedin-in-icon-transparent-png-31623971891mln9zij7ty.png"
+                                alt="" class="profile_5">
+                        </div>
+                    </section>
+                    <div class="row text-center p-0">
+                        <p>Lorem ipsum dolor sit amet consectetur <br> 90 days </p>
+                    </div>
+                </div>
+
+                <!-- footer -->
+                <footer class="footer">
+                    <div class="footer_items">
+                        <p><a href="#">About</a> <a href="#">Home</a> <a href="#">Contact</a></p>
+                        <p><a href="#">Links</a> <a href="#">Privacy & policy</a></p>
+                        <p><a href="#">Ads</a> <a href="#">Adverting</a></p>
+                    </div>
+                    <div class="d-flex footer_2">
+                        <img width="100" height="40"
+                            src="https://logos-world.net/wp-content/uploads/2020/05/Linkedin-Logo.png" alt="">
+                        <h6>clone &#169 copyright by Babidul in 2023</h6>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
