@@ -474,13 +474,17 @@
     color: #474646;
     font-size: 13px;
 }
-
-.item_2 h6 a {
+.Groups
+{
+    font-size: 13px;
+    font-weight: 500;
+}
+.item_2 h6 a, .Groups {
     text-decoration: none;
     color: rgb(73, 73, 255);
 }
 
-.item_2 h6 a:hover {
+.item_2 h6 a:hover , .Groups:hover {
     text-decoration: underline;
 }
 
