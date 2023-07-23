@@ -814,4 +814,27 @@
     #banner {
         width: 100%;
     }
+    .network
+    {
+        margin-top: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 395px) {
+    .right_menu {
+        /* display: flex; */
+        width: 15%;
+    }
+    .menu {
+        width: 50%;
+        /* text-align: right; */
+    }
+    #navigation .logo {
+        width: 25% !important;
+    }
+    .menu ul li a {
+
+        padding-right: 1px;
+    }
 }
